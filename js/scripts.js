@@ -19,7 +19,8 @@ $(document).ready(function() {
 		// Actualizando una pagina determinada
 		//$(".embed-container").html(appendText());
 		//$(".embed-container").load("http://www.google.com");
-		$(".embed-container > p").text(appendText()); // Aca voy
+		//$(".embed-container").after(appendText()); // Aca voy
+		$(".embed-container").append("<p>Stuff!</p>");
 
 	});
 
@@ -37,15 +38,17 @@ $(document).ready(function() {
 });
 
 
+/*
+
 function appendText() {
-    var txt1 = "<p>Text.</p>";              // Create text with HTML
-    var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
-    var txt3 = document.createElement("p");
-    txt3.innerHTML = "Text.";               // Create text with DOM
-    $("body").append(txt1, txt2, txt3);     // Append new elements
+    var txt = "<p>Text.</p>";              // Create text with HTML
+    //var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+    //var txt3 = document.createElement("p");
+    //txt3.innerHTML = "Text.";               // Create text with DOM
+    //$("body").append(txt1, txt2, txt3);     // Append new elements
+    return txt;
 }
-
-
+*/
 
 /*
 ancestor descendant::nth-child()
